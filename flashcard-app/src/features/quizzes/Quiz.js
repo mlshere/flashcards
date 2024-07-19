@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectCardById } from "../cards/cardsSlice";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { selectQuizzes } from "./quizzesSlice";
+import ROUTES from "../../app/routes";
 // import styles from "./Quiz.module.css";
 
 export const Quiz = () => {
@@ -18,11 +19,14 @@ export const Quiz = () => {
         <div>
             <h2>{quiz.name}</h2>
             {cards.map(card => (
-                <div key={card.id}>
+                <ul key={card.id}>
                     <h3>{card.front}</h3>
                     <p>{card.black}</p>
-                </div>
+                </ul>
            ) )}
+           <Link to={ROUTES.newQuizRoute()} className="button center">
+        Create a New Quiz
+      </Link>
         </div>
     );
 };
