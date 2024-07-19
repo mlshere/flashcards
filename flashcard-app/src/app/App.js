@@ -5,7 +5,7 @@ import { NewTopicForm } from '../features/topics/NewTopicForm';
 import { Topics } from '../features/topics/Topics';
 import { Quiz } from '../features/quizzes/Quiz';
 import { NewQuizForm } from '../features/quizzes/NewQuizForm';
-import { AppLayOut } from './AppLayOut';
+import  AppLayOut  from './AppLayout.js';
 
 function App() {
   return (
