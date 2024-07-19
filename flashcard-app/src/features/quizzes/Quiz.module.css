@@ -1,0 +1,34 @@
+/* Quiz.module.css */
+.quizContainer {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .cardFront,
+  .cardBack {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardBack {
+    display: none;
+  }
+  
+  .card.flipped .cardBack {
+    display: block;
+  }
+  
+  .card.flipped .cardFront {
+    display: none;
+  }
+  
